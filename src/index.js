@@ -102,4 +102,6 @@ app.delete("/account", accountVerify, (request, response) => {
     return response.status(200).json(customers);
 });
 
-app.listen(3333);
+app.listen(3333, () =>{
+    console.log("server is running in port 3333")
+});
